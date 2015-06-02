@@ -1,0 +1,25 @@
+curl -F 'client_id=4cd57cf891a0441c9a8c77ac40b5babd' \
+     -F 'client_secret=2da5c2a230944daea58391f075cfd5f9' \
+     -F 'object=geography' \
+     -F 'aspect=media' \
+     -F 'lat=40.7033127' \
+     -F 'lng=-73.979681' \
+     -F 'radius=5000' \
+     -F 'verify_token=location' \
+     -F 'callback_url=http://181.163.65.85:8888/insta' \
+     https://api.instagram.com/v1/subscriptions/
+
+
+
+     curl -F 'client_id=4cd57cf891a0441c9a8c77ac40b5babd' \
+     -F 'client_secret=2da5c2a230944daea58391f075cfd5f9' \
+     -F 'object=tag' \
+     -F 'aspect=media' \
+     -F 'object_id=vsco' \
+     -F 'verify_token=location' \
+     -F 'callback_url=http://181.163.65.85:8888/insta' \
+     https://api.instagram.com/v1/subscriptions/
+
+
+
+     curl -X DELETE 'https://api.instagram.com/v1/subscriptions?client_secret=2da5c2a230944daea58391f075cfd5f9&id=1&client_id=4cd57cf891a0441c9a8c77ac40b5babd&id=18434396'
